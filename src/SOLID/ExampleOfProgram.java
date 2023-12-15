@@ -7,10 +7,17 @@ public class ExampleOfProgram {
     Transaction transaction = new Transaction();
     ChangeCurrency changeCurrency = new ChangeCurrency();
     public void example(){
-        //work with the first acc:
+        System.out.println("work with the first acc:");
         showBalanceOnFirstAcc();
         transaction.withdraw(firstBankAccount,500);
         showBalanceOnFirstAcc();
+        changeCurrency.USDtoEUR(firstBankAccount);
+
+        System.out.println("work with the second acc:");
+        showBalanceOnSecondAcc();
+        transaction.deposit(secondBankAccount,1500);
+        showBalanceOnSecondAcc();
+        changeCurrency.EURtoUSD(secondBankAccount);
     }
     public void showBalanceOnFirstAcc(){
         System.out.println("");

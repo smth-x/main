@@ -2,8 +2,8 @@ package SOLID;
 
 public class Transaction {
 
-    UserType regularUser = new RegularUser();
-    UserType premiumUser = new PremiumUser();
+    private UserType regularUser = new RegularUser();
+    private UserType premiumUser = new PremiumUser();
 
     public void withdraw(User.UserBankAccount bankAccount, int howMuchMoney) {
         if (bankAccount.balance>=howMuchMoney) {
