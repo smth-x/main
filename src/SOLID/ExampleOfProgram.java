@@ -9,9 +9,7 @@ public class ExampleOfProgram {
     public void example(){
         //work with the first acc:
         showBalanceOnFirstAcc();
-        changeCurrency.USDtoEUR(firstBankAccount);
-        showBalanceOnFirstAcc();
-        changeCurrency.EURtoUSD(firstBankAccount);
+        transaction.withdraw(firstBankAccount,500);
         showBalanceOnFirstAcc();
     }
     public void showBalanceOnFirstAcc(){

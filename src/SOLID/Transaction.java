@@ -11,11 +11,11 @@ public class Transaction {
             switch (bankAccount.typeOfAccout) {
                 case "regular":
                     System.out.println("success");
-                    bankAccount.balance += regularUser.withdrawMoneyWithTax(howMuchMoney);
+                    bankAccount.cash += regularUser.withdrawMoneyWithTax(howMuchMoney);
                     break;
                 case "premium":
                     System.out.println("success");
-                    bankAccount.balance += premiumUser.withdrawMoneyWithTax(howMuchMoney);
+                    bankAccount.cash += premiumUser.withdrawMoneyWithTax(howMuchMoney);
                     break;
                 default:
                     System.out.println("unknown typeOfAccount");
